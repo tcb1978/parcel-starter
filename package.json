@@ -1,0 +1,16 @@
+{
+  "name": "parcel-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel *.html -p 3001"
+  },
+  "bin": {
+    "parcel": "./node_modules/.bin/parcel"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7"
+  }
+}
