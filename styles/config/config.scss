@@ -1,0 +1,106 @@
+/*colors*/
+$border: rgb(241,91,76);
+$button: rgb(241,91,76);
+$feature: rgb(241,91,76);
+$grey: rgb(153,149,150);
+$header: rgb(35,31,32);
+$hover: rgb(241,91,76);
+$light-grey: rgb(249,249,249);
+$paragraph: rgb(35,31,32);
+$white: #fff;
+
+/*breakpoints*/
+$tablet: 70em;
+$desktop: 50em;
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) { @content ; }
+ }
+  @else if $point == laptop {
+    @media (min-width: 64em) { @content ; }
+ }
+   @else if $point == tablet {
+    @media (min-width: 50em) { @content ; }
+ }
+  @else if $point == phablet {
+    @media (min-width: 37.5em)  { @content ; }
+ }
+ @else if $point == mobileonly {
+    @media (max-width: 37.5em)  { @content ; }
+
+ }
+}
+/*mixins*/
+
+/*font element mixins*/
+@mixin antialiasing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@mixin DINProBold {
+  font-family: 'DINPro Bold', sans-serif;
+  @include antialiasing;
+}
+@mixin DINProMedium {
+  font-family: 'DINPro Medium', sans-serif;
+  @include antialiasing;
+}
+@mixin DINProRegular {
+  font-family: 'DINPro Regular', sans-serif;
+  @include antialiasing;
+}
+@mixin DINProLight {
+  font-family: 'DINPro Regular', sans-serif;
+  @include antialiasing;
+}
+@mixin headerMajor {
+  @include DINProMedium;
+  font-size: 3.125em;
+  text-transform: uppercase;
+}
+@mixin headerSub {
+  @include DINProMedium;
+  font-size: 1.875em;
+  text-transform: uppercase;
+}
+@mixin headerMinor {
+  @include DINProMedium;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+@mixin paragraph {
+  @include DINProRegular;
+  font-size: 15px;
+}
+/*button element mixins*/
+@mixin buttonSolid {
+  background-color: $button;
+  border: 1px solid $button;
+  color: $white;
+  cursor: pointer;
+  height: 3.125em;
+  font-size: 0.9375em;
+  @include DINProBold;
+  text-transform: uppercase;
+}
+@mixin buttonClear {
+  background-color: transparent;
+  border: 1px solid $button;
+  color: $button;
+  cursor: pointer;
+  height: 3.125em;
+  font-size: 0.9375em;
+  @include DINProBold;
+  text-transform: uppercase;
+}
+/*utility element mixins*/
+@mixin divider {
+  content: '';
+			background-color: $button;
+			display: block;
+			height: 2px;
+			margin: 40px auto;
+			left: -2px;
+			position: relative;
+			width: 30px;
+}

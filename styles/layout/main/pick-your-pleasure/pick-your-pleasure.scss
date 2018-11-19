@@ -1,0 +1,163 @@
+@import '/styles/config/config.scss';
+/*Styles for Pick Your Pleasure section*/
+.section:nth-child(4) {
+  .section__inner {
+    background-color: $white;
+    min-height: 41.5em;
+    text-align: center;
+
+    @include breakpoint (tablet) {
+      min-height: 38.6em;
+    }
+  }
+
+  .section__header {
+    @include headerSub;
+
+    &:before {
+      @include divider;
+      margin-top: 43px;
+    }
+  }
+
+  .section__paragraph {
+    @include paragraph;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 1.875em;
+
+    @include breakpoint (tablet) {
+      max-width: 26%;
+    }
+  }
+
+  .section__row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 0 auto;
+    padding-top: 3.3125em;
+
+    @include breakpoint (phablet) {
+
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-evenly;
+      max-width: 44.125em;
+    }
+    @include breakpoint (tablet) {
+      max-width: 73.125em;
+    }
+  }
+
+  .section__col {
+    padding-top: 3.75em;
+      &:nth-child(1) {
+        padding-top:0;
+        @include breakpoint (phablet) {
+          padding-top: 0;
+        }
+      }
+      &:nth-child(2) {
+        @include breakpoint (phablet) {
+          padding-top: 0;
+        }
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        @include breakpoint (phablet) {
+          padding-top: 3.75em;
+        }
+        @include breakpoint (tablet) {
+          padding-top: 0;
+        }
+      }
+
+  }
+
+  .figure__card {
+    max-height: 16.625em;
+    max-width: 16.625em;
+    position: relative;
+
+    &:hover {
+      :before {
+        background-color: rgba(255, 255, 255, .5);
+        border: 1px solid $button;
+        content:"";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+      }
+      &:nth-child(1):after,
+      &:nth-child(2):after,
+      &:nth-child(3):after,
+      &:nth-child(4):after {
+        color: $feature;
+        @include DINProBold;
+        font-size: 14.99 px;
+        left: 50%;
+        position: absolute;
+        opacity: 1;
+        text-transform: uppercase;
+        -webkit-transition: .5s ease;
+        -o-transition: .5s ease;
+        transition: .5s ease;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 50%;
+        -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        width: 100%;
+      }
+      &:nth-child(1):after {
+        content: 'view cold pressed menu';
+      }
+      &:nth-child(2):after {
+        content: 'view milks menu';
+      }
+      &:nth-child(3):after {
+        content: 'view juice menu';
+      }
+      &:nth-child(4):after {
+        content: 'view mixed juice menu';
+      }
+    }
+  }
+
+  .figure__img {
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    width: 100%;
+  }
+
+  .section__button {
+    @include buttonClear;
+    margin-top: 3.3125em;
+    width: 12.75em;
+    margin-bottom: 70px;
+    @include breakpoint (phablet) {}
+    @include breakpoint (tablet) {
+      margin-bottom: 0px;
+    }
+  }
+}
+/*End of Styles for Pick Your Pleasure section*/

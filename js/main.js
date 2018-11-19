@@ -1,6 +1,8 @@
-import { ImportedClass } from './imported-example.js';
-console.log('main works')
+import { Slider } from './slider.js';
+import { FadeIn } from './fade-in.js';
 
-const testing = new ImportedClass();
+const instantiateSlider = new Slider();
+const instantiateFadeIn = new FadeIn();
 
-testing.doesItWork();
+instantiateFadeIn.fadein();
+instantiateSlider.slider();

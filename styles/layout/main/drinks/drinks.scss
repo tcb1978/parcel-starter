@@ -1,0 +1,150 @@
+@import '/styles/config/config.scss';
+/*Styles for Drinks section*/
+.section:nth-child(3) {
+	.slider {
+		cursor: pointer;
+		margin: 0 auto;
+		max-height: 545px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+
+		@include breakpoint (phablet) {
+			max-height: 77vh;
+			padding-top: 10em;
+		}
+		@include breakpoint (tablet) {
+			max-height: 70vh;
+			padding-top: inherit;
+		}
+	}
+
+	.slider-inner {
+		position: absolute;
+		&:after {
+			clear: both;
+			content: "";
+			display: table;
+		}
+	}
+
+	.slide {
+		// background-attachment: fixed;
+		float: left;
+		-webkit-box-sizing: border-box;
+						box-sizing: border-box;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+
+		&.slide__one {
+			background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255, 0.5)), to(rgba(255,255,255, 0.5))),url('./assets/images/drinks.jpg');
+			background-image:-webkit-linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)),url('./assets/images/drinks.jpg');
+			background-image:-o-linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)),url('./assets/images/drinks.jpg');
+			background-image:linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)),url('./assets/images/drinks.jpg');
+			background-position: -52vh 10vh;
+			background-size: 213%;
+			min-height: 52vh;
+			padding-top: 1em;
+
+			@include breakpoint (tablet) {
+				background-image:url('./assets/images/drinks.jpg');
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				background-size: contain;
+				position: relative;
+			}
+		}
+		&.slide__two {
+			background-color: pink;
+		}
+		&.slide__three {
+			background-color: blue;
+		}
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		span {
+			top: 12vw;
+			font-size: 10vw;
+			line-height: 100vh;
+			letter-spacing: 1vw;
+			font-family: Impact, Charcoal, sans-serif;
+			text-shadow: 5px 5px
+		}
+	}
+
+	.slide__inner-slide {
+		cursor: default;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		display: block;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.slide__header {
+		padding-top: 3em;
+		@include headerMinor;
+		@include breakpoint (phablet) {padding-top: 4em}
+		@include breakpoint (tablet) {padding-top: 2em}
+	}
+
+	.slide__sub-header {
+		font-size: 30px;
+		&:before {
+			@include divider;
+		}
+		@include DINProMedium;
+		text-transform: uppercase;
+	}
+
+	.slide__paragraph {
+		@include paragraph;
+		padding-top: 1.875em;
+		margin: 0 auto;
+		max-width: 90%;
+		@include breakpoint (phablet) {
+			max-width: 28%;
+		}
+	}
+
+	.slide__button {
+		@include buttonClear;
+		margin-top: 1.875em;
+	}
+
+	.dots-wrapper {
+		bottom: 2.4em;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+    width: auto;
+
+		li {
+			background-color: $feature;
+			border-radius: 50%;
+			cursor: pointer;
+			display: inline-block;
+			height: 0.75em;
+			margin: 0 4px;
+			opacity: 0.5;
+			-webkit-transition: opacity 0.3s;
+			-o-transition: opacity 0.3s;
+			transition: opacity 0.3s;
+			width: 0.75em;
+
+			&.active,
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+}
+/*End of Styles for Drinks section*/

@@ -1,0 +1,119 @@
+@import '/styles/config/config.scss';
+/*Styles for elements within You Buy It By The Box section and child elements within */
+.section:nth-child(2) {
+	.hero {
+		background-color: $white;
+		min-height: 805px;
+		padding-top: 1em;
+		text-align: center;
+		@include breakpoint (phablet) {
+			max-height: 505px;
+			min-height: 505px;
+		}
+	}
+
+	.hero__inner {
+		padding-top: 1.875em;
+	}
+
+	.hero__header--regular {
+		@include headerSub;
+		text-transform: uppercase;
+
+		@include breakpoint (tablet) {
+			font-size: 1.875em;
+		}
+	}
+
+	.hero__paragraph {
+		max-width: 100%;
+		padding-top: 2.5em;
+		@include paragraph;
+
+		@include breakpoint (tablet) {
+			margin: 0 auto;
+			max-width: 33%;
+		}
+	}
+
+	.cards {
+		color: $feature;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		font-size: 9.37em;
+		@include DINProBold;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		padding-top: 60px;
+
+		@include breakpoint (tablet) {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			margin: 0 auto;
+			max-width: 5.85em;
+		}
+	}
+
+	.card {
+		margin: 0 auto;
+		max-width: 168px;
+		position: relative;
+	}
+
+	.card__step-list {
+		bottom: 4.5em;
+		color: #231f20;
+		@include DINProMedium;
+		font-size: 15px;
+		left: -22%;
+		padding: 0 0 1px 2px;
+		position: absolute;
+		text-align: left;
+		width: 9.3em;
+
+		span {
+			&:after {
+				content: '';
+				background-color: #b6b4b5;
+				display: block;
+				height: 2px;
+				margin-top: 2px;
+				left: -2px;
+				position: relative;
+				width: 10.625em;
+			}
+		}
+
+		li {
+			line-height: 1.3;
+		}
+		@include breakpoint (phablet) {
+			left: -22%;
+		}
+		@include breakpoint (tablet) {
+			left: -20%;
+		}
+	}
+
+	.card__step-list--modified {
+		bottom: 30px;
+	}
+
+	.hero__button {
+		@include buttonSolid;
+		margin-top: 2.25em;
+		width: 11.875em;
+	}
+}
+/*Styles for elements within You Buy It By The Box section and child elements within */

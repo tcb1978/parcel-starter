@@ -1,11 +1,285 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Juice Served Here</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./styles/main.scss">
 </head>
-<body>
-	<p>It <span>works</span>.</p>
-  	<script src="./js/main.js"></script>
+
+<body class="">
+	<header class="header">
+		<div class="masthead focus-in-expand">
+			<p class="masthead__paragraph">free shipping on your first order and any order over $89 <a class="masthead__link"
+				 href="#">click to see details</a></p>
+		</div>
+		<!-- end of masthead -->
+		<div class="grid-container grid-container__nav">
+			<nav class="nav">
+				<div class="nav__login">log in</div>
+				<a href="#" class="nav__link nav__link--shop">shop</a>
+				<a href="#" class="nav__link nav__link--cleanses">cleanses</a>
+				<a href="#" class="nav__link nav__link--build">build a box</a>
+				<a href="#" class="nav__link nav__link--unconventional">the unconventional</a>
+				<a href="#" class="nav__link nav__link--who">who we are</a>
+				<div class="logo__container">
+					<a href="#" class="logo__icon"></a>
+					<a href="#" class="logo__announcement">juice<span> served here</span></a>
+				</div>
+				<!-- end of logo container -->
+				<div class="checkout__container">
+					<a href="#" class="checkout__icon"></a>
+					<div class="checkout__count">12</div>
+				</div>
+				<!-- end of checkout container -->
+			</nav>
+			<!-- end of nav -->
+		</div>
+	</header>
+	<main class="main">
+		<section class="section fade-in-element">
+			<div class="hero">
+				<div class="hero__inner">
+					<h1 class="hero__header hero__header--major">we ship overnight nationwide</h1>
+					<p class="hero__paragraph">We deliver Tuesday-Friday and offer the ability to schedule ahead.</p>
+					<button class="hero__button">view menu</button>
+				</div>
+			</div>
+		</section>
+		<section class="section hidden">
+			<div class="hero">
+				<div class="hero__inner">
+					<h1 class="hero__header hero__header--regular">you buy it by the box</h1>
+					<p class="hero__paragraph">Choose 7-8 products of your liking and have it delivered to you door as often as you
+						want. Your pick every time.</p>
+					<div class="cards">
+						<div class="card">
+							<div class="card__step">
+								<span>01</span>
+								<ul class="card__step-list"><span>Build Your Box</span></ul>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__step">
+								<span>02</span>
+								<ul class="card__step-list"><span>Subscribe Or Don't</span></ul>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__step">
+								<span class="">03</span>
+								<ul class="card__step-list card__step-list--modified"><span>Pick A Delivery Day</span>
+									<li class="focus-in-expand">we ship</li>
+									<li class="focus-in-expand">overnight</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<button class="hero__button shadow-inset-center">shop the menu</button>
+				</div>
+			</div>
+		</section>
+		<section class="section hidden">
+			<div class="slider">
+				<figure class="slide slide__one">
+					<div class="slide__inner-slide">
+						<h2 class="slide__header">drinks</h2>
+						<h3 class="slide__sub-header">Juices</h3>
+						<p class="slide__paragraph">Our juices are individually crafted to flush, detoxify, hydrate and strengthen the
+							body.</p>
+						<button class="slide__button shadow-inset-center">view juice menu</button>
+					</div>
+				</figure>
+				<figure class="slide slide__two"><span>TEXT</span></figure>
+				<figure class="slide slide__three"><span>TEXT</span></figure>
+			</div><a class="arrow-left" href="javascript:void(0);"></a><a class="arrow-right" href="javascript:void(0);"></a>
+			<div class="dots-wrapper"></div>
+		</section>
+		<section class="section hidden">
+			<div class="section__inner">
+				<h2 class="section__header">pick your pleasure</h2>
+				<p class="section__paragraph">Our products are nourishing, satiating and never cut with cheap fillers.</p>
+				<div class="section__row">
+					<div class="section__col">
+						<figure class="figure__card">
+							<a class="figure__link" href="#">
+								<img class="figure__img" src="./styles/assets/images/coldpressed.jpg" alt="delicious product availble now" /></a>
+						</figure>
+					</div>
+					<div class="section__col">
+						<figure class="figure__card">
+							<a class="figure__link" href="#">
+								<img class="figure__img" src="./styles/assets/images/milks.jpg" alt="delicious product availble now" /></a>
+						</figure>
+					</div>
+					<div class="section__col">
+						<figure class="figure__card">
+							<a class="figure__link" href="#">
+								<img class="figure__img" src="./styles/assets/images/juice.jpg" alt="delicious product availble now" /></a>
+						</figure>
+					</div>
+					<div class="section__col">
+						<figure class="figure__card">
+							<a class="figure__link" href="#">
+								<img class="figure__img" src="./styles/assets/images/juice-two.jpg" alt="delicious product availble now" /></a>
+						</figure>
+					</div>
+				</div>
+				<button class="section__button">view drinks menu</button>
+			</div>
+		</section>
+		<section class="section hidden">
+			<div class="section__inner">
+				<h2 class="section__header">cleanse</h2>
+				<h3 class="section__sub-header">drink yourself clean</h3>
+				<p class="section__paragraph">You like tose cupcakes right? Sweet-spot for the whiskey neat? We get it. Time to
+					cleanse.</p>
+				<button class="section__button">shop cleanses</button>
+			</div>
+		</section>
+		<section class="section hidden">
+			<div class="section__inner">
+				<h2 class="section__header">locations</h2>
+				<div class="section__row">
+					<div class="section__col">
+						<figure class="figure__location">
+							<a class="figure__link" href="#">
+								<img src="./styles/assets/images/platform.jpg" alt="Available at Platform" class="figure__img">
+							</a>
+						</figure>
+						<address class="address__location">platform</address>
+						<ul class="section__list">
+							<li class="section__list-item">monday - sunday - 7am - 8pm</li>
+						</ul>
+					</div>
+					<div class="section__col">
+						<figure class="figure__location">
+							<a class="figure__link" href="#">
+								<img src="./styles/assets/images/dtla.jpg" alt="Available in DTLA" class="figure__img">
+							</a>
+						</figure>
+						<address class="address__location">dtla</address>
+						<ul class="section__list">
+							<li class="section__list-item">monday - sunday - 7am - 8pm</li>
+						</ul>
+					</div>
+					<div class="section__col">
+						<figure class="figure__location">
+							<a class="figure__link" href="#">
+								<img src="./styles/assets/images/pasadena.jpg" alt="Available in Pasadena" class="figure__img">
+							</a>
+						</figure>
+						<address class="address__location">pasadena</address>
+						<ul class="section__list">
+							<li class="section__list-item">monday - saturday - 7:30am - 7pm</li>
+							<li class="section__list-item">sunday - 8am - 6pm</li>
+						</ul>
+					</div>
+					<div class="section__col">
+						<figure class="figure__location">
+							<a class="figure__link" href="#">
+								<img src="./styles/assets/images/venice.jpg" alt="Available in Venice" class="figure__img">
+							</a>
+						</figure>
+						<address class="address__location">Venice</address>
+						<ul class="section__list">
+							<li class="section__list-item">monday - sunday - 7am - 8pm</li>
+						</ul>
+					</div>
+				</div>
+				<button class="section__button">view all locations</button>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__inner">
+			<div class="footer__row">
+				<div class="footer__col footer__col--with-form">
+					<form action="#" class="form">
+						<h2 class="form__header">let's be friends with benefits</h2>
+						<div class="form__actions">
+							<input type="text" name="Email Address" class="form__input form__input--text" placeholder="Email" value="Email" />
+							<input type="submit" value="OK!" class="form__input form__input--submit">
+						</div>
+					</form>
+				</div>
+				<div class="footer__col footer__col--with-list">
+					<ul class="footer__list">
+						<li class="footer__list-item footer__list-item--title">
+							<h3 class="footer__list-title">company</h3>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">find stores</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">our story</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">our juice</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">our farmers</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">our communities</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">careers</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list-item footer__list-item--title">
+							<h3 class="footer__list-title">help</h3>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link footer__link--faq">faq</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">shiipping</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">return policy</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">gift cards</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">contact us</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">legal</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list-item footer__list-item--title">
+							<h3 class="footer__list-title">social</h3>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">instagram</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">facebook</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__link">twitter</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__policies">
+			<div class="footer__policies-col">
+				<p class="footer__paragraph">&copy; Juice Served Here NEVER CONVENTIONAL. All Rights Reserved</p>
+			</div>
+			<div class="footer__policies-col">
+				<a href="#" class="footer__policies-link">Privacy Policy</a>
+				<a href="#" class="footer__policies-link">Terms & Conditions</a>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>

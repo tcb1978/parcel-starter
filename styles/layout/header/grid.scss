@@ -1,0 +1,69 @@
+/*nav grid layout for desktop*/
+@media (min-width: $desktop) {
+  .grid-container--nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1auto;
+    grid-template-columns: 1auto;
+    -ms-grid-rows: 1auto;
+    grid-template-rows: 1auto;
+    grid-template-areas: "nav";
+  }
+
+  .nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .08fr;
+    grid-template-columns: .08fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". nav__link--shop nav__link--cleanses nav__link--build logo__container logo__container nav__link--unconventional nav__link--unconventional nav__link--who checkout__container";
+    grid-area: nav;
+  }
+
+  .nav__link--shop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: nav__link--shop;
+  }
+
+  .nav__link--cleanses {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: nav__link--cleanses;
+  }
+
+  .nav__link--build {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: nav__link--build;
+  }
+
+  .logo__container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: logo__container;
+  }
+
+  .nav__link--unconventional {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2;
+    grid-area: nav__link--unconventional;
+  }
+
+  .checkout__container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 10;
+    grid-area: checkout__container;
+  }
+
+  .nav__link--who {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    grid-area: nav__link--who;
+  }
+}

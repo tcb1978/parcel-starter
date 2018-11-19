@@ -1,0 +1,33 @@
+@import '/styles/config/config.scss';
+/*Styles for all elements with class .section or class .hero and child classes within. These are general styles.*/
+.section:nth-child(1) {
+	padding: .3em 0 0 0;
+
+	@include breakpoint (tablet) {
+		padding: inherit;
+	}
+
+	.hero {
+		background-attachment: fixed;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: relative;
+	}
+
+	.hero__inner {
+		margin: 0 auto;
+		max-width: 80%;
+	}
+
+	.hero__header--major {
+		@include headerMajor;
+		text-transform: uppercase;
+	}
+
+	.hero__paragraph {
+		@include paragraph;
+	}
+}
+
+/*End for all elements with class .section or class .hero and child classes within. These are general styles.*/
